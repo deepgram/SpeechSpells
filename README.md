@@ -1,4 +1,4 @@
----
+<!--
 date: 2022-03-09
 title: How to Build a Speech-Enhanced Game with Godot and Deepgram
 author: nikolawhallon
@@ -9,7 +9,7 @@ description: Learn how to build a speech-enhanced game with Deepgram's ASR engin
 tags: [tutorial, game-dev, godot]
 seo:
   keywords: video game development, build video game, create game with godot, game development
----
+-->
 
 In this post, we will be making a simplified version of the 2D game "Spooky Speech Spells" (which you can play [here](https://spookyspeechspells.deepgram.com))
 in the Godot game engine using an integration with the Deepgram automatic speech recognition (ASR) engine. Why Godot? Because it is an
@@ -123,7 +123,7 @@ and add a "CollisionShape2D" node. Your node structure should now look like the 
 <img src="./README_Assets/player_node_structure.png" alt="The node structure of the Player - the `KinematicBody2D` root node here contains a `Sprite` node and `CollisionShape2D` node as children." style="max-width: 250px;display: block;margin-left: auto;margin-right: auto;">
 
 The "Sprite" node will contain the image to use for our player. We will use a pixel art
-image of a skull for our player; you can download it [here](https://res.cloudinary.com/deepgram/image/upload/v1646849910/blog/2022/03/deepgram-godot-tutorial/assets/skull.png). Drag the
+image of a skull for our player; you can download it [here](./README_Assets/skull.png). Drag the
 file into the "Assets" directory in the "Filesystem" tab in the lower left, then click on the "Import"
 tab next to the "Scene" tab, uncheck "Filter" and click "Reimport":
 
@@ -240,8 +240,8 @@ Let's make a fireball scene which we will use to have the player shooting fireba
 Create a new scene, for the root node click "Other Node" and pick "Area2D". Rename this root node "Fireball".
 Add two child nodes: an "AnimatedSprite" and a "CollisionShape2D".
 
-Next, import into your "Assets" directory [fireball_1.png](https://res.cloudinary.com/deepgram/image/upload/v1646850119/blog/2022/03/deepgram-godot-tutorial/assets/fireball_1.png)
-and [fireball_2.png](https://res.cloudinary.com/deepgram/image/upload/v1646850119/blog/2022/03/deepgram-godot-tutorial/assets/fireball_2.png).
+Next, import into your "Assets" directory [fireball_1.png](./README_Assets/fireball_1.png)
+and [fireball_2.png](./README_Assets/fireball_2.png).
 The two sprites will make up our fireball animation. For each of the imported fireball sprites, go to the "Import" tab,
 uncheck "Filter" and click "Reimport" - just like for our pixel art player sprite, this will ensure that these sprites
 maintain their blocky pixel form even on high-resolution displays.
