@@ -379,16 +379,6 @@ can check your OS's audio sample rate under `Utilities -> Audio Midi Setup`.
 
 ---
 
----
-
-**_Note_**: This integration will not work for Godot's HTML5 builds out-of-the-box
-as authenticating websockets connections with headers is not supported for these builds due to
-some authentication limitations of browsers. If you plan on making an HTML5 game with the Deepgram
-integration, you will have to deploy a proxy server for authentication and make some minor adjustments
-of the `DeepgramInstance` scene. This may be a topic of a future guide!
-
----
-
 In your "Game" scene, add as a child an instance of the "DeepgramInstance" scene, then modify `Game.gd` as follows:
 
 ```
